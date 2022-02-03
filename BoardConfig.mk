@@ -80,6 +80,10 @@ BOARD_MAIN_PARTITION_LIST := system vendor product
 # System as root
 BOARD_SUPPRESS_SECURE_ERASE := true
 
+# Crypto
+TW_INCLUDE_CRYPTO := true
+TW_INCLUDE_CRYPTO_FBE := true
+
 # Hack: prevent anti rollback
 PLATFORM_SECURITY_PATCH := 2099-12-31
 VENDOR_SECURITY_PATCH := 2099-12-31
@@ -92,6 +96,7 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 TW_THEME := portrait_hdpi
 TW_EXTRA_LANGUAGES := true
 TW_SCREEN_BLANK_ON_BOOT := true
+TW_INCLUDE_RESETPROP := true
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 TW_MAX_BRIGHTNESS := 255
 TW_DEFAULT_BRIGHTNESS := 255
